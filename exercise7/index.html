@@ -7,7 +7,90 @@
   <title>CSS Exercise 7</title>
 
   <style>
-  	
+  
+	  .container {
+		  margin: auto;
+  		  width: 50%;
+		  max-width: 500px;
+		  height: 500px;
+		  margin-top: 150px;
+		  padding: 0 100px;
+	  }
+	  .interior {
+		  
+		  width: 100px;
+		  height: 100px;
+		  margin: 0 10px 10px 0;
+		  position: relative;
+		  left: 100px;
+	  }
+	  .interior::before {
+		  content: "";
+		  width: 100px;
+		  height: 100px;
+		  position: absolute;
+		  left: -100px;
+	  }
+	  .interior::after {
+		  content:"";
+		  position: absolute;
+		  width: 100px;
+		  height: 100px;
+		  left: 100px;
+	  }
+	  .div1 {
+		  background-color: red;
+	  }
+	  .div1::before {
+		  background-color: lightcoral;
+	  }
+	  .div1::after {
+		  background-color: darkred;
+	  }
+	  .div2 {
+		  background-color: orange;
+	  }
+	  .div2::before {
+		  background-color: #fdd58b;
+	  }
+	  .div2::after {
+		  background-color: darkorange;
+	  }
+	  .div3 {
+		  background-color: yellow;
+	  }
+	  .div3::before {
+		  background-color: lightyellow;
+	  }
+	  .div3::after {
+		  background-color: #c5c500;
+	  }
+	  .div4 {
+		  background-color: blue;
+	  }
+	  .div4::before {
+		  background-color: lightblue;
+	  }
+	  .div4::after {
+		  background-color: darkblue;
+	  }
+	  .div5 {
+		  background-color: pink;
+	  }
+	  .div5::before {
+		  background-color: lightpink;
+	  }
+	  .div5::after {
+		  background-color: #f8516d;
+	  }
+	 
+	  /* .div5 {
+		position: relative;
+		background-color: red;
+		top: -380px;
+		left: 125px;
+		
+	  } */
   </style>
 </head>
 <body>
